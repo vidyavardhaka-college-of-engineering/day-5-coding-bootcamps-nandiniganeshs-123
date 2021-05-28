@@ -10,22 +10,22 @@
 
 int main()
 {
-	char str[10],temp;
-  int i=0,j=0,a=0;
+	char str[10];
+  int i=0,n,a=0;
   printf("Enter the string: ");
 	scanf("%s", str);
-  i=0;
-  j=strlen(str)-1;
- while(str[i]!='\0')
+  
+  for(i=0;i<n/2;i++)
+
  {
    
-   str[i]=str[j];
-   str[j]=str[a];
-   j--;
-   i++;
+   if (str[i]==str[n-i-1])
+   a++;
+
+  
   
  }
- if(str[i]==str[a])
+ if(a==i)
  {
    printf("palidrome");
  }
